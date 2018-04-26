@@ -16,6 +16,12 @@ Important: not needed to implement a GUI.
 * Any alive cell with exactly 2 or 3 alive neighbours, keeps being alive in the next generation.
 * Any dead cell with exactly 3 alive neighbours, becomes alive in the next generation.
 
+## Example
+
+![Evolution example](img/example.png)
+
+Note: we assume that the evolution affects all the cells simultaneously.
+
 ## Good to know
 
 * We’re aiming for production-ready code.
