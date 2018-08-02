@@ -67,8 +67,16 @@ def process_board(board):
     return output
 
 
+def print_board(board):
+    for i in range(len(board)):
+        print(' '.join(board[i]))
+
+
 def main(board):
+    print_board(board)
     output = process_board(board)
+    print('\n')
+    print_board(output)
 
 
 def test_process_board():
@@ -91,3 +99,9 @@ def test_process_board():
 
 if __name__ == '__main__':
     test_process_board()
+    board = [
+        ['.', '.', '*', '.'],
+        ['.', '*', '*', '*'],
+        ['*', '.', '*', '.'],
+    ]
+    main(board)
